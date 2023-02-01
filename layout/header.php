@@ -10,14 +10,10 @@
 <style>
   a, .nav-link,.navbar-brand {
     color: white;
-}  
+}
     </style>
 </head>
-<style>
-body {
-  background-image: url('backgr5.jpg');
-}
-</style>
+<body>
   <div class="container" >
     <div class="row">
   <nav class="navbar navbar-expand-lg" style="background-color: rgb(65, 7, 109);" >
@@ -29,7 +25,7 @@ body {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php">Index</a>
+          <a class="nav-link" aria-current="page" href="index.php">index</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="ex1.php">Exercise1</a>
