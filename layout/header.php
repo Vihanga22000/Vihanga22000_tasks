@@ -10,10 +10,14 @@
 <style>
   a, .nav-link,.navbar-brand {
     color: white;
-}
+}  
     </style>
 </head>
-<body>
+<style>
+body {
+  background-image: url('backgr5.jpg');
+}
+</style>
   <div class="container" >
     <div class="row">
   <nav class="navbar navbar-expand-lg" style="background-color: rgb(65, 7, 109);" >
