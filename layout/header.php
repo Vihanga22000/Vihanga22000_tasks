@@ -36,6 +36,12 @@
         <li class="nav-item">
           <a class="nav-link" href="contactus.php">Contact US</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="variable.php">Exercise3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="controlflow.php">Exercise4</a>
+        </li>
         
       </ul>
       <form class="d-flex" role="search">

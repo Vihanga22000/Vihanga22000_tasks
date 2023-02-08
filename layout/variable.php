@@ -40,14 +40,15 @@ echo echo statement to print using  tag: Hello …., You are welcome to my site.
 
 <h3>4. Write a PHP script with two string variables. Assign any text to these variables. Join them together.  </h3>
 <?php
-$first_name = "Vihanga";
-$last_name = "Gunathilaka";
+$fname = "Vihanga";
+$lname = "Gunathilaka";
 
-echo "My name is $first_name $last_name.";
-echo "<br> Lenght of my first name is " .strlen($first_name);
+echo "My name is $fname $lname.";
+echo "<br> Lenght of my first name is ".strlen($fname);
+echo "<br> Lenght of my last name is ".strlen($lname);
 ?>
 
-<h3> 5.Write a script to add up the numbers: 298, 234, 46. Use variables to store these numbers and 
+<h3> 5.Write a script to add up the numbers: 298, 234, 46.Use variables to store these numbers and 
 echo statement to output your answer.</h3>
 <?php $num1="298";
   $num2="234";
@@ -55,8 +56,10 @@ echo statement to output your answer.</h3>
 $total = $num1+$num2+$num3;
 echo "Total=".$total;
 ?>
+<h3>6 andedited in Footer</h3>
+<h3>7</h3>
+<?php echo $_SERVER['HTTP_USER_AGENT'] . "\n"; ?>
 
-<?php echo basename($_SERVER['SCRIPT_FILENAME'])." Last modified date on  " . date("l, d M Y H:i ");?>
 
      
 
