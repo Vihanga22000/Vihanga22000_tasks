@@ -42,6 +42,9 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="controlflow.php">Exercise4</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="array.php">Exercise5</a>
+        </li>
         
       </ul>
       <form class="d-flex" role="search">
