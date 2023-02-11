@@ -49,9 +49,7 @@ elseif ($score < 50)
     echo "Fail ";
     }
 ?>
-<h3>4.
-    
-    Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting,)
+<h3>4.Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting,)
 </h3>
 <?php
 $a = readline('Enter the age : ');
