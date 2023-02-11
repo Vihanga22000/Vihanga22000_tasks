@@ -56,9 +56,12 @@ echo statement to output your answer.</h3>
 $total = $num1+$num2+$num3;
 echo "Total=".$total;
 ?>
-<h3>6 andedited in Footer</h3>
-<h3>7</h3>
+<h3>6.Write a PHP script to detect the browser being used to view your pages. (Use predefined variables: $_SERVER). </h3>
+
 <?php echo $_SERVER['HTTP_USER_AGENT'] . "\n"; ?>
+
+<h3>7.(Did in footer)Write a PHP script in the footer section of your universal footer just below the Copyright information to display the last modification time of a file</h3>
+
 
 
      

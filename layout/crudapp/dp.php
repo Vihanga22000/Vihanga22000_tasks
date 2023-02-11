@@ -5,7 +5,7 @@ $password="password";
 $dbname = "capp1";
 // creating connection
 
-$conn= new mysqli($servername, $username, $password, $dbname);
+$conn=new mysqli($servername, $username, $password, $dbname);
 
 //check the connection
 if ($conn->connect_error){

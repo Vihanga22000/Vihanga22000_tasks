@@ -64,5 +64,35 @@ else{
 ?>
 
 
+<h3> 5.Use Switch statement with strops function to print the name of the browser<h3>
+<?php
+function getbrowser()
+{
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $BROWSER ="N/A";
+    $browsers = [
+        '/msie/i' => 'Internet explorer',
+        '/firefox/i'=> 'Firefox',
+        '/safari/i'=>'safari',
+        '/chrome/i'=>'chrome',
+        '/edge/i'=>'edge',
+        '/opera/i'=>'opera',
+        '/mobile/i'=>'mobile browser',
+
+    ];
+    foreach($browsers as $regex=>$value)
+    {
+        if(preg_match($regex,$user_agent))
+        {
+            $browser=$value;
+        }
+    }
+    return $browser;
+}
+echo"You are using:".getbrowser();
+
+?>
+
+
 <?php include "footer.php" ?>
 
