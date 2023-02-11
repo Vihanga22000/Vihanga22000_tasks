@@ -55,15 +55,26 @@ echo "<li>".$value . "</li>";
 
 ?> 
 
-2. The unset() function is used to remove element from the array.
-</h4> 
+ <h3>2.The unset() function is used to remove element from the array.</h3> 
 <?php
-$courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
-
-unset($courses1["2"]);
-var_dump($courses1);
-print_r(array_values($courses1));
-?> 
+    $courses1=array("PHP","HTML","JavaScript","CMS","Project");
+    unset($courses1["20"]);
+    echo "<h6> use unset function to remove the third element of the array </h6>";
+    foreach ($courses1 as $value) {
+        echo $value."<br>"; 
+    } 
+    echo "Dumb information about element of the array";
+        var_dump($courses1);
+    ?>
+    <br><br>
+    <?PHP
+    echo"Print only the values of the array elements";
+        $values=array_values($courses1);
+        foreach ($values as $value) {
+            echo $value . "<br>";}
+?>
+<br>
+ 
 
 
 <h3>3. Sort the following array 
@@ -76,8 +87,9 @@ asort($courses);
 foreach($courses as $x=>$x_value)
    {
    echo  $x_value;
-   echo "<br>";
+   echo "<br><br>";
    }
+   
 
 
 echo "b) ascending order sort by Key<br>";
@@ -85,7 +97,7 @@ ksort($courses);
 foreach($courses as $x=>$x_value)
    {
    echo  $x_value;
-   echo "<br>";
+   echo "<br><br>";
    }
 
 
@@ -94,7 +106,7 @@ arsort($courses);
 foreach($courses as $x=>$x_value)
    {
    echo  $x_value;
-   echo "<br>";
+   echo "<br><br>";
    }
 
 
@@ -103,24 +115,61 @@ krsort($courses);
 foreach($courses as $x=>$x_value)
    {
    echo  $x_value;
-   echo "<br>";
+   echo "<br><br>";
    }
 ?>
 
-<h3>3.Write a php script to display courses as list. Use </h3>
-<?php
-$courses=array("PHP", "HTML", "JavaScript", "CMS", "Project");
-foreach($courses as $values){
-    echo "<li>" . $value . "</li>";
-} ?>
+
 
 <h3>4. Change the following array's all values to upper case.
 </h3> 
 <?php
 $courses=array("php", "html", "javascript", "cms", "project");
-
 print_r( array_change_key_case($courses,CASE_UPPER));
-?> 
+?>
+
+<h4>
+5. List all your favorite colors and their hexadecimal equivalents.(associative arrays)
+</h4> 
+<?php 
+    $color['#F0F8FF'] = "AliceBlue";
+    
+    $color['#F5F5DC'] = "Beige";
+    
+    $color['#000000'] = "Black";
+   
+    $color['#00FFFF'] = "Aqua";
+   
+    $color['##DC143C'] = "Crimson";
+    
+    foreach ($color as $x=>$x_values) {
+        echo $x . " => ".$x_values."<br>";}
+
+?><br> 
+
+<h3>
+6. PHP script to calculate and display average temperature, five lowest and highest temperatures.
+</h3> 
+
+<?php
+    $x=array(78, 60, 62, 68, 71, 68, 73,
+    85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 
+    74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
+    $sum=array_sum($x);
+   
+    $count=count($x);
+    echo "Average temperature : ".$sum/$count;
+    sort($x);
+    for ($y=0; $y < 5; $y++) {
+        echo $x[$y] . "<br>";
+    }
+    rsort($x);
+    for ($y=0; $y < 5; $y++) {
+        echo $x[$y]."<br>";
+    }
+?>
+
+
 
 
 
