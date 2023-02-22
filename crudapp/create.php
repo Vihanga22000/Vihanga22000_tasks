@@ -27,12 +27,12 @@ if (isset($_POST['submit'])){
     values('$fname','$lname','$city','$groupid')";
 
     if($conn -> query($sql) === true){
-        echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
+        echo " <\">Your information is added successfully.<p>";
       }
        else {
         echo "Error : " .$conn->error;
         }}?>
-?>
+
 <?php
 include '../layout/footer.php';
 ?>
