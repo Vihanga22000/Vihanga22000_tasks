@@ -12,7 +12,7 @@
     color: white;
 }
     </style>
-  <script src="../layout/js/site.js"></script>
+  <script src="../layout/site.js"></script>
 </head>
 <body>
   <div class="container" >
@@ -45,6 +45,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="array.php">Exercise5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="jsinclass.php">Exercise6</a>
         </li>
         
       </ul>
