@@ -27,7 +27,7 @@ if (isset($_POST['submit'])){
     values('$fname','$lname','$city','$groupid')";
 
     if($conn -> query($sql) === true){
-        echo " <\">Your information is added successfully.<p>";
+        echo " Your information is added successfully.";
       }
        else {
         echo "Error : " .$conn->error;
