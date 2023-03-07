@@ -46,8 +46,7 @@ echo "<h1>" . $title1 . "</h1>";
 <span id ="place2" style="color:red; background-color:yellow;"></span>
 <script>
     document.getElementById("place1").innerHTML = "This will go to place1";
-    document.getElementById("place2").innerHTML = "This will go to span
-    ";
+    document.getElementById("place2").innerHTML = "This will go to span";
 </script>
 <?php
 $g1 =5;
